@@ -33,6 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -43,8 +44,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -87,7 +86,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.maskedTextBox1);
@@ -107,6 +105,16 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Técnico";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(296, 110);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(91, 46);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "Modificar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -200,25 +208,6 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "(Para modificar datos haga click sobre los datos del técnico)";
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(296, 110);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 46);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Modificar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(238, 164);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(115, 13);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "preguntar por lostfocus";
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -256,7 +245,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label7;
 
     }
 }

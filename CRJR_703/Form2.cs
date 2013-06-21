@@ -23,7 +23,7 @@ namespace WindowsFormsApplication1
 
             InitializeComponent();
 
-            maskedTextBox1.Focus();
+            
             try
             {
                 
@@ -114,6 +114,7 @@ namespace WindowsFormsApplication1
 
 
         // NAVEGACION POR ENTER
+        //VALIDADO LOS CAMPOS NUMERICOS Y NO NUMERICOS
         //rut
         private void maskedTextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -126,72 +127,72 @@ namespace WindowsFormsApplication1
         //nombre
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!IsNumeric(textBox1.Text))
-
+            if (e.KeyChar == (13))
             {
-                if (e.KeyChar == (13)) {
+                 if (!IsNumeric(textBox1.Text.Trim()))
+                {
                     textBox2.Focus();
+                 }
+                else
+                {
+                    MessageBox.Show("ingrese solo letras");
+                    textBox1.Clear();
+                    textBox1.Focus();
                 }
-                
-            }
-            else {
-                MessageBox.Show("ingrese solo letras");
-                textBox1.Clear();
-                textBox1.Focus();
             }
         }
 
         //direccion
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!IsNumeric(textBox1.Text))
+
+            if (e.KeyChar == (13))
             {
-                if (e.KeyChar == (13))
+                if (!IsNumeric(textBox2.Text.Trim()))
                 {
                     textBox3.Focus();
                 }
-            }
-            else
-            {
-                MessageBox.Show("ingrese solo letras");
-                textBox1.Clear();
-                textBox1.Focus();
+                else
+                {
+                    MessageBox.Show("ingrese solo letras");
+                    textBox2.Clear();
+                    textBox2.Focus();
+                }
             }
         }
 
         //telefono
         private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (IsNumeric(textBox1.Text))
+            if (e.KeyChar == (13))
             {
-                if (e.KeyChar == (13))
+                if (IsNumeric(textBox3.Text.Trim()))
                 {
                     textBox4.Focus();
                 }
-            }
-            else
-            {
-                MessageBox.Show("ingrese solo letras");
-                textBox1.Clear();
-                textBox1.Focus();
+                else
+                {
+                    MessageBox.Show("ingrese solo letras");
+                    textBox3.Clear();  
+                }
             }
         }
 
         //especialidad
         private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!IsNumeric(textBox1.Text))
+            if (e.KeyChar == (13))
             {
-                if (e.KeyChar == (13))
+                 if (!IsNumeric(textBox4.Text.Trim()))
                 {
                     maskedTextBox1.Focus();
                 }
-            }
-            else
-            {
-                MessageBox.Show("ingrese solo letras");
-                textBox1.Clear();
-                textBox1.Focus();
+                else
+                {
+                    MessageBox.Show("ingrese solo letras");
+                    textBox4.Clear();
+                    textBox4.Focus();
+                }
             }
         }
 
