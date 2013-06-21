@@ -52,7 +52,48 @@ namespace WindowsFormsApplication1
         //INSERTAR
         private void button1_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text.Trim() != "" && textBox2.Text.Trim() != "" && textBox3.Text.Trim() != "" && radioButton1.Checked == true || radioButton2.Checked == true)
+            {
+                try
+                {
+                    //conexión llamada CON
+                    MySqlConnection con = new MySqlConnection(ruta);
+                    con.Open();
+                    MySqlCommand cmd = new MySqlCommand();
+                    string tp = "";
 
+                    if (radioButton1.Checked == true)
+                    {
+                        tp = "intel";
+                    }
+
+                    if (radioButton2.Checked == true)
+                    {
+                        tp = "amd";
+
+
+                    }
+
+                    string consulta = "insert into pc_escritorio(marca,modelo,cant_ram,tipo_pro,capacidad) values ('"+textBox1.Text+"','"+textBox2.Text+"','"+textBox3.Text+"','"+tp+"','"+textBox4.Text+"')";
+                    cmd.Connection = con;
+                    cmd.CommandText = consulta;
+                    cmd.ExecuteNonQuery();
+
+                    string consulta2 = "select * from pc_escritorio";
+                    MySqlDataAdapter da = new MySqlDataAdapter(consulta2, con);
+                    DataSet ds = new DataSet();
+                    da.Fill(ds, "pc_escritorio");
+                    dataGridView1.DataSource = ds.Tables[0];
+                    con.Close();
+
+
+
+                }
+                catch (Exception ee)
+                {
+                    MessageBox.Show("Se produjo un error debido a : " + ee.ToString());
+                }
+            }
         }
 
 
@@ -102,7 +143,7 @@ namespace WindowsFormsApplication1
                 }
                 else
                 {
-                    MessageBox.Show("ingrese solo letras");
+                    MessageBox.Show("ingrese solo números");
                     textBox3.Clear();
                 }
             }
@@ -154,6 +195,44 @@ namespace WindowsFormsApplication1
             radioButton1.Checked = false;
             radioButton2.Checked = false;
             textBox1.Focus();
+        }
+
+
+        //Modificar
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Trim() != "" && textBox2.Text.Trim() != "" && textBox3.Text.Trim() != "" && radioButton1.Checked == true || radioButton2.Checked == true)
+            {
+                try
+                {
+
+                    MySqlConnection con = new MySqlConnection(ruta);
+                    con.Open();
+                    MySqlCommand cmd = new MySqlCommand();
+
+                    string tp = "";
+
+                    if (radioButton1.Checked == true)
+                    {
+                        tp = "intel";
+                    }
+
+                    if (radioButton2.Checked == true)
+                    {
+                        tp = "amd";
+
+
+                    }
+
+                    string consulta = "update pc_escritorio set marca = '"+textBox1.Text+"', modelo '"+textBox2.Text+"', cant_ram ='"+textBox3.Text+"', tipo_pro = '"+tp+"', capacidad = '"+textBox4.Text+"' where cod_pc_e"
+
+
+                }
+                catch (Exception ee)
+                {
+                    MessageBox.Show("Se produjo un error debido a : " + ee.ToString());
+                }
+            }
         }
     }
 }
