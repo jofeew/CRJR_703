@@ -16,3 +16,17 @@ C:\Users\Jo-ann\documents\visual studio 2010\Projects\CRJR_703\CRJR_703\obj\x86\
 C:\Users\Jo-ann\documents\visual studio 2010\Projects\CRJR_703\CRJR_703\obj\x86\Debug\CRJR_703.pdb
 C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\CRJR_703.exe
 C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\CRJR_703.pdb
+C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\bin\Debug\CRJR_703.exe
+C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\bin\Debug\CRJR_703.pdb
+C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\WindowsFormsApplication1.Form2.resources
+C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\WindowsFormsApplication1.Form3.resources
+C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\WindowsFormsApplication1.Form4.resources
+C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\WindowsFormsApplication1.Form5.resources
+C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\WindowsFormsApplication1.Form6.resources
+C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\WindowsFormsApplication1.Form7.resources
+C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\WindowsFormsApplication1.Form8.resources
+C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\GenerateResource.write.1.tlog
