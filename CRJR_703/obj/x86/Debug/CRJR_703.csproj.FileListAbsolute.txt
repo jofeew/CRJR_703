@@ -30,3 +30,5 @@ C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\WindowsFormsApp
 C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Jo-ann\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\inidentificable\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\CRJR_703.exe
+C:\Users\inidentificable\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\CRJR_703.pdb
