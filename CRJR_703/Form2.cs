@@ -20,9 +20,14 @@ namespace WindowsFormsApplication1
         public Form2()
         {
             
+
             InitializeComponent();
+
+            maskedTextBox1.Focus();
             try
             {
+                
+
                 MySqlConnection con = new MySqlConnection(ruta);
                 //abro la conexión
                 con.Open();
@@ -96,7 +101,20 @@ namespace WindowsFormsApplication1
         }
 
 
+        //FUNCION ISNUMERIC
+        private static bool IsNumeric(string value)
+        {
+            int number;
+            return Int32.TryParse(value, out number);
+
+        }
+
+
+
+
+
         // NAVEGACION POR ENTER
+        //rut
         private void maskedTextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (13))
@@ -105,35 +123,75 @@ namespace WindowsFormsApplication1
             }
         }
 
+        //nombre
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (13))
+            if (!IsNumeric(textBox1.Text))
+
             {
-                textBox2.Focus();
+                if (e.KeyChar == (13)) {
+                    textBox2.Focus();
+                }
+                
+            }
+            else {
+                MessageBox.Show("ingrese solo letras");
+                textBox1.Clear();
+                textBox1.Focus();
             }
         }
 
+        //direccion
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (13))
+            if (!IsNumeric(textBox1.Text))
             {
-                textBox3.Focus();
+                if (e.KeyChar == (13))
+                {
+                    textBox3.Focus();
+                }
+            }
+            else
+            {
+                MessageBox.Show("ingrese solo letras");
+                textBox1.Clear();
+                textBox1.Focus();
             }
         }
 
+        //telefono
         private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (13))
+            if (IsNumeric(textBox1.Text))
             {
-                textBox4.Focus();
+                if (e.KeyChar == (13))
+                {
+                    textBox4.Focus();
+                }
+            }
+            else
+            {
+                MessageBox.Show("ingrese solo letras");
+                textBox1.Clear();
+                textBox1.Focus();
             }
         }
 
+        //especialidad
         private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (13))
+            if (!IsNumeric(textBox1.Text))
             {
-                maskedTextBox1.Focus();
+                if (e.KeyChar == (13))
+                {
+                    maskedTextBox1.Focus();
+                }
+            }
+            else
+            {
+                MessageBox.Show("ingrese solo letras");
+                textBox1.Clear();
+                textBox1.Focus();
             }
         }
 
