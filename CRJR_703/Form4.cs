@@ -224,7 +224,7 @@ namespace WindowsFormsApplication1
 
                     }
 
-                    string consulta = "update pc_escritorio set marca = '"+textBox1.Text+"', modelo '"+textBox2.Text+"', cant_ram ='"+textBox3.Text+"', tipo_pro = '"+tp+"', capacidad = '"+textBox4.Text+"' where cod_pc_e"
+                    //string consulta = "update pc_escritorio set marca = '"+textBox1.Text+"', modelo '"+textBox2.Text+"', cant_ram ='"+textBox3.Text+"', tipo_pro = '"+tp+"', capacidad = '"+textBox4.Text+"' where cod_pc_e"
 
 
                 }
