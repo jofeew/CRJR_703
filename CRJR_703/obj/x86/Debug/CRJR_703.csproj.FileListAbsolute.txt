@@ -45,3 +45,5 @@ C:\Users\inidentificable\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\Window
 C:\Users\inidentificable\Documents\GitHub\CRJR_703\CRJR_703\obj\x86\Debug\CRJR_703.csproj.GenerateResource.Cache
 C:\Users\inidentificable\Documents\GitHub\CRJR_703\CRJR_703\bin\Debug\CRJR_703.exe
 C:\Users\inidentificable\Documents\GitHub\CRJR_703\CRJR_703\bin\Debug\CRJR_703.pdb
+C:\Users\Jo-ann\Desktop\CRJR_703\CRJR_703\obj\x86\Debug\CRJR_703.exe
+C:\Users\Jo-ann\Desktop\CRJR_703\CRJR_703\obj\x86\Debug\CRJR_703.pdb
